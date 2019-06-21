@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link type="text/css" href="styles/style.css" rel="stylesheet" />
+
+		<title>HCI-Portfolio</title>
+
+	</head>
+	<body>
+	  	<header class="grid-item header">
+            <h1 class="titel-main">HCI Portfolio - Emma Selhorst</h1>
+	  		
+	  		<div class="menutoggle">
+	  			<a href="#">&#9776;</a>
+	  		</div>
+	  	</header>
+
+	  	 <nav id="menu" class="inactive">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="wearables.html">Wearables</a></li>
+				<li><a href="playfulinteractions.html">Playful Interactions</a></li>
+				<li><a href="artificialcreatures.html">Artificial Creatures</a></li>
+				<li><a href="ar-vr.html">AR & VR</a></li>
+				<li><a href="arduino.html" class="li-active">Arduino</a></li>
+				<li><a href="vr-environments.html">VR environments</a></li>
+				<li><a href="computervision.html">Computer Vision</a></li>
+				<li><a href="excursion.html">Excursie</a></li> 
+				<li><a href="labweeks.html">Lab weken</a></li>    		
+			</ul>
+	    </nav>
+
+	    <main class="grid-item main">
+	    	<h1>ARDUINO</h1>
+
+            <h3>Introductie</h3>
+                <p>Voor deze workshop ga je kennis maken met Arduino. Dit ga je doen door middel van het maken van opdrachten uit de Arduino manual. </p>
+
+            <h3>Opdracht 3C: BLINK MULTIPLE LEDS</h3>
+                <p>Voor opdracht 3C moet je het groene lampje twee keer sneller later knipperen dan het gele lampje.</p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%203C.png" alt="opdracht 3c">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/Cf9FtYPEipk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 4C: FADE LED - ANALOG OUTPUT</h3>
+                <p>Voor opdracht 4C moet je de lampjes van aan naar uit laten vervagen en andersom. De lampjes mogen dit niet tegelijk doen, maar juist het tegenovergestelde. Dus als het ene lampje aan gaat, gaat het andere lampje uit (maar wel met het vervaag effect). Dit is gedaan door middel van een rekensom in de code met "brightness" (ook wel de helderheid van de lampjes). </p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%204C.png" alt="opdracht 4C">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/6l6TWmuepzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 6C: CONTROLLING A LED WITH A POTMETER</h3>
+                <p>Voor opdracht 6C moet je de lichtjes ook van aan naar uit laten vervagen en tegenovergesteld van elkaar (het ene lampje gaat aan, het andere lampje gaat uit). Bij deze opdracht laat je de lampjes vervagen door middel van een "potmeter". Dit is een apparaatje waar je aan kan draaien. </p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%206C.png" alt="opdracht 6C">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/YuH7N50sqjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 7: CONTROL THE LED WITH LIGHT</h3>
+                <p>Voor opdracht 7 moet je de helderheid (brightness) van de lampjes aanpassen. Dit doe je door middel van een lichtsensor. Als het lichtsensor veel licht opvangt vanuit de omgeving, dan wordt het lampje feller. Dus meer licht, het lampje wordt feller. Minder licht, lampje wordt minder fel. Door middel van een hulpmiddel, de Serial Monitor, kan de helderheid van het lampje ook uitgedrukt worden in getallen. Het laagste wat de sensor kan meten is ‘0’ en het hoogste is ‘1023’. Hoe meer licht hoe groter het getal en andersom.  </p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%207.png" alt="opdracht 7">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/nmm8E0GH7-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 8: VOLTAGE DIVIDER</h3>
+                <p>De sensoren van opdracht 5, 6 en 7 zijn allemaal gebaseerd op een vrij algemeen circuit in electronica, genaamd voltage divider. De A0-A5 van de Arduino zijn allemaal in staat om een bepaalde spanning tussen de 0 en 5V te meten en dit om te zetten naar een getal tussen 0 en 1023.</p>
+                <p>Deze opdracht manipuleert het aantal spanning wat langs de resistor komt. Eerste wordt er niks gestopt, maar als tweede wordt alle spanning gestopt. Als eerste wordt de spanning in de eerste resistor(R1) gestopt en als laatste wordt de spanning in de tweede resistor(R2). De spanning komst eerst langs R1. Als R1 licht is, dan vangt deze spanning op. Dit komt omdat de spanning eerst langs R1 moet om naar R2 te gaan. Dus als R2 licht is, dan zal de spanning eerst naar R1 gaan en niks naar R2. Dit komt omdat de spanning bij R2 wordt gestopt, de spanning moet nog eerst langs R1 om naar R2 te kunnen. R1 is dus de verbindende factor om naar R2 te gaan. </p>
+                <figure class="fotoarduino">
+                    <img src="images/opdracht8.png" alt="opdracht 8B">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/hFA5oRX8tLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 9B: ARDUINO AND PROCESSING</h3>
+                <p>Voor opdracht 9B heb ik naast het programma "Arduino", ook het programma "Processing" geruikt. Met dit programma kan je verschillende tekeningen maken. Met de voorgeschreven code die bij de opdracht zat, kreeg je een cirkel als tekening te zien. Je moest de code aanpassen, zodat je een ander voorwerp zag dan een cirkel. Ik heb gekozen voor een driehoek. De driehoek verandert steeds als er meer of minder licht door de lichtsensor komt. Hij verandert van klein naar groot of andersom. Dit kun je zien in de twee video's hier onderaan. </p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%209.png" alt="opdracht 9B">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/ayWD2OQ-lDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/TQ6XcVUxRkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 10F: BUTTONS</h3>
+                <p>Voor opdracht 10F moest ik werken met twee knopjes en twee lampjes. Je moet er voor zorgen dat als je een knopje indrukt het lampje aan gaat en als je los laat, het lampje weer uit gaat. Maar het lampje mocht niet aangaan als beiden knopjes worden ingedrukt.</p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2010F.png" alt="opdracht 10F">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/eByQlKUXpLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Opdracht 11B: SERVOMOTOR</h3>
+                <p>Voor opdracht 11B werd als opdracht gegeven om de twee knopjes en de servo moter te gebruiken en om aan elkaar te vervinden. De bedoeling was dat als ik op het ene knopje drukt, de servo naar links bewoog en als ik op het andere knopje drukte dat de servo weer terug naar het midden bewoog.</p>
+                <p></p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2010F.png" alt="opdracht 11B">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/sOXwY9uRPN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h3>Opdracht 12B: CONTROLLING THE SERVO WITH INPUTS</h3>
+                <p>Voor opdracht 12 werd als opdracht gegeven om ook de twee knopjes en de servo moter te gebruiken en om aan elkaar te vervinden. De bedoeling was dat als ik op het ene knopje drukt, de servo naar links bewoog en als ik op het andere knopje drukte dat de servo naar rechts bewoog..</p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2012B.png" alt="opdracht 12B">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/XTJNfNW2bEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h3>Opdracht 13B: SOUND</h3>
+                <p>Voor opdracht 13 en ook de laatste opdracht, moest ik gaan werken met een speaker. De opdracht was om met bepaalde frequenties te werken en dan een eigen melodie samen te stellen. In de voorgeschreven code stond duidelijk welke frequentie gelijk stond aan welke noot. Dat was erg handig. Ik heb voor het liedje "Hoedje van papier" gekozen.</p>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2013B%20deel%201.png" alt="opdracht 13B deel 1">
+                </figure>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2013B%20deel%202.png" alt="opdracht 13B deel 2">
+                </figure>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2013B%20deel%203.png" alt="opdracht 13B deel 3">
+                </figure>
+                <figure class="fotoarduino">
+                    <img src="images/Opdracht%2013B%20deel%204.png" alt="opdracht 13B deel 4">
+                </figure>
+                <iframe class="arduino" width="900" height="615" src="https://www.youtube.com/embed/YWpXGtnuvRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	    </main>
+
+	    <footer class="grid-item foot">
+	    	<p>&copy; Emma Selhorst, 2019</p>
+	    </footer>
+
+	  <script type="text/javascript" src="scripts/script.js"></script>
+
+	</body>
+</html>
